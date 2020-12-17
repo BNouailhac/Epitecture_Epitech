@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="epicture.exe" version="1.0.0.0" publicKeyToken="9bc69cc0284d9a03" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="epicture" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="epicture.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="epicture.exe" size="33248">
+      <assemblyIdentity name="epicture" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>idfr2HY4v3d4f1ZrhWEnHNwF18wJHr9KhioJeCXysZw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Imgur.API.dll" size="187904">
+      <assemblyIdentity name="Imgur.API" version="4.0.1.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ss82n5H6oFOtLmXNZ6JX5hslEy0hErO3zOP6RxkFSdI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="526336">
+      <assemblyIdentity name="Newtonsoft.Json" version="9.0.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>V14w+Y5OpCyeUW7ci7sprYtQsXOj5rNrW6OeEzzOlAY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="epicture.exe.config" size="184">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>jWVCngsqgsEdPtxOoE7SAK7f6h1++LmE6IqOl8/1R3A=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-HTGD7NO\bapti" issuerKeyHash="3e45a7c94130de7e2f6aee4c5f6f594e17b4a26a" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>4VXtWF/k0V0d3zyPNIAmpNS3YEA4P/SCnwEhFtiBQKs=</DigestValue></Reference></SignedInfo><SignatureValue>Q0aBS1pArt0SrJkvhCJ99VeWNSPaCWy0JspCB9ppSl8dCyUuqVdWye63CFvcfVf6/TFgvxwmKmJJGyQr3aQZvcagAUH9NRS+MwtlfUc5c+TymfJxfwso1y5KYgsR/sqA3WP9b3gaeJFCDBptQ83XN2zYPCbi8Wc1wXJ5YXZM2PM=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>x1Isf63nErQyyLtx67jkwkJVplEXU2I9DeZLWBUKvMSkuqJn1kEMs6jH9xq+tugguD7jaVbxyQdM6oa2fIzP8b3BKEXJZO40Lh+/1oAvmgvOaVxDTFAFOtlOqppgzvnxovp0ehuEzJTr5f6MoJgC5KlVK//pZJa5y3+OASAgoH0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="ab4081d81621019f82f43f384060b7d4a42680348f3cdf1d5dd1e45f58ed55e1" Description="" Url=""><as:assemblyIdentity name="epicture.exe" version="1.0.0.0" publicKeyToken="9bc69cc0284d9a03" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-HTGD7NO\bapti</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>aPUBKU7x+MKMeDUKLiaOUCB4A7RbaNQWzgOy4V0NmXg=</DigestValue></Reference></SignedInfo><SignatureValue>FpKWtwXvKDWVVuFgG6Z540h6cPH250oGj/vGdenMReSoNkN41hVB8+H+1cL0iogYHkO1/4wC0+1W3EqMF1xMoDKqeYxlqqqJiFCMJhc5rNVn4lLnE7koXjLHKCJrTbx3laiUjlkGfyuZ4mmC4EVFIIB3VonJFzOtxOoeqlxc/Fw=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>x1Isf63nErQyyLtx67jkwkJVplEXU2I9DeZLWBUKvMSkuqJn1kEMs6jH9xq+tugguD7jaVbxyQdM6oa2fIzP8b3BKEXJZO40Lh+/1oAvmgvOaVxDTFAFOtlOqppgzvnxovp0ehuEzJTr5f6MoJgC5KlVK//pZJa5y3+OASAgoH0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQOKM8PHXsUJVNg5pQXYAJlTANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEgAVABHAEQANwBOAE8AXABiAGEAcAB0AGkwHhcNMjAxMTA1MTMyMTExWhcNMjExMTA1MTkyMTExWjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEgAVABHAEQANwBOAE8AXABiAGEAcAB0AGkwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMdSLH+t5xK0Msi7ceu45MJCVaZRF1NiPQ3mS1gVCrzEpLqiZ9ZBDLOox/cavrboILg+42lW8ckHTOqGtnyMz/G9wShFyWTuNC4fv9aAL5oLzmlcQ0xQBTrZTqqaYM758aL6dHobhMyU6+X+jKCYAuSpVSv/6WSWuct/jgEgIKB9AgMBAAEwDQYJKoZIhvcNAQELBQADgYEApCt2t6Nx7TOYjj7kGWxWkZ3Fk0z2AD/zWRRg+kar8YVyArqJreZ0TDrFyjZIqlNS88yvjhmAAH1n5ioKHfKOIP+3MuhhD9lMyaK0zntz0vf7H24zoZ0NQ4NMSoHy1SqL+e3sU+dHgymn7OBRpqhLJkwbpLFu03j1dRptRKhyF6k=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
